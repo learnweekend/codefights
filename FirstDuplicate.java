@@ -21,10 +21,8 @@ public class FirstDuplicate {
     int[] arr = {1, 2, 3, 4, 5, 6, 5, 1}; // 5
     System.out.println("First Duplicate = " + firstDuplicate(arr));
   }
-  /* 1. take the abs value of arr[i].
-     2. Check the element value at  index: arr[value - 1]
-     3. If the element value is  > 0, then change the value to -ve.
-     4. Otherwise return the current element value;
+  /* 1. take the abs value of arr[i].  2. Check the element value at  index: arr[value - 1]
+     3. If the element value is  > 0, then change the value to -ve. 4. Otherwise return the current element value;
        Runtime : O(N), space : O(1).
    */
   private static int firstDuplicate(int[] arr){

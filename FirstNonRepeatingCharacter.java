@@ -62,6 +62,7 @@
         linkedHashSet.add(ch);
       }
     }
+    //The first character in the linkedHashSet will be the firstNonRepeatingCharacter.
     Iterator<Character> itr = linkedHashSet.iterator();
     if(itr.hasNext()){
       return itr.next();

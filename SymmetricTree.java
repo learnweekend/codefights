@@ -20,7 +20,7 @@
    private static boolean isTreeSymmetricRecursive(TreeNode left, TreeNode right){
      if(left == null && right == null) return true;
      if(left == null || right == null) return false;
-     if(left.val != right.val) return false;
+     if(! left.val.equals(right.val)) return false;
      return isTreeSymmetricRecursive(left.left, right.right) && isTreeSymmetricRecursive(left.right, right.left);
    }
 
@@ -43,7 +43,7 @@
          continue;
        if(currLeft == null || currRight == null) //i f one of them is null then return false
           return false;
-       if(currLeft.val != currRight.val) // check the node values if they are equal
+       if(! currLeft.val.equals(currRight.val)) // check the node values if they are equal
           return false;
 
        leftStack.push(currLeft.left); //leftstack left node

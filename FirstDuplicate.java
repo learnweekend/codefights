@@ -31,7 +31,7 @@ public class FirstDuplicate {
     for(int i = 0; i < arr.length; i++){
       int current = Math.abs(arr[i]);  // Note : Take the abs value of arr[i].
       if(arr[current - 1] > 0) { // -1 because array index starts 0, but the elements starts from 1.
-         arr[current - 1] = -arr[value - 1]; // change the sign of the number (to -ve)
+         arr[current - 1] = -arr[current - 1]; // change the sign of the number (to -ve)
       } else {
         return current; // the value will be the duplicated element
       }
